@@ -1,6 +1,6 @@
 # GigMaven - A service provider and credit system
 
-####Context:
+#### Context:
 COVID-19 has made many people unemployed and businesses unoperational. People are looking for ways to make a living safely while preventing high overhead cost or worsen the pandemic. GigMaven is a conceptual platform to solve such problem by delivering services on wheels while capitalizing on credit resources. 
 
 ###### Service Component:
