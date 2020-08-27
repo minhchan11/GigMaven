@@ -1,0 +1,12 @@
+## BEAUTY ON WHEELS APPLICATION
+- For extracting information between different classes and objects, I used the **Visitor** design pattern. Thus, it is easy to access this information and save memory by using Java objects without having to query the entire class and still be able to get the data out for validation. 
+- For making an easy validation system, I used the **Composite** design pattern. Using the tree structure, it is easy to develop independently and add to the "Validation Total" class since all I need to do is call validate() and all nodes in the tree will validate the information.
+- For the "Validation Total" to check the registration, I used the **Factory** design pattern, so I can call the validator without having to instantiate through the constructor and discard them right after use.
+- For validation that has different structure and level of importance or hierarchy or different steps depending on different condition (decision tree), I used the **Decorator** design pattern. This help me to call validate() once on the wrapper class and everything else will validate and throw error depending on level. For example: *new InsuredDriverValidator(new OfficialOwnerValidator(new InsuranceExpiryValidator(this.registration))).validate()*;
+- Use Singleton pattern for Bank: Since there should only be one instance in the entire runtime
+- Use Adapter pattern to convert between number, string and Big Int
+- Use Facade pattern to hide away all the different class involves between client and bank
+- Abstract away steps and remove coupling by creating different classes that specializes in one functionality
+- The Model has a **HashSet** structure to prevent duplicate of Driver Name and Vehicle information
+- The View utilizes **TreeMap** to sort driver by first name per query result (Since Driver Name implements Comparable)
+- Functional programming and interface is used to make streaming more efficient and cleaner code.
